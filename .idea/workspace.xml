@@ -4,35 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6014f026-1e8c-4d4f-9b77-59b85be4abd2" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lovelyfub.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/exception/BusinessLogicException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/exception/DuplicateResourceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/exception/ExceptionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/response/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/response/ListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/response/MultiResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/response/PageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/response/SingleResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/demo/src/test/java/example/DemoApplicationTests.java" afterDir="false" />
+    <list default="true" id="6014f026-1e8c-4d4f-9b77-59b85be4abd2" name="변경" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +95,18 @@
       <option name="presentableId" value="Default" />
       <updated>1690024158647</updated>
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1690078317057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690078317057</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
