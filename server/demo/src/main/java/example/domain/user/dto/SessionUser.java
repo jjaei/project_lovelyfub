@@ -1,10 +1,9 @@
 package example.domain.user.dto;
 
-import java.io.Serializable;
-
-import com.lovelyfub.domain.user.entity.User;
-
+import example.domain.user.entity.User;
 import lombok.Getter;
+
+import java.io.Serializable;
 
 @Getter
 public class SessionUser implements Serializable{

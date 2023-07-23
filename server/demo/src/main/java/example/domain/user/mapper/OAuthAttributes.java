@@ -1,13 +1,12 @@
 package example.domain.user.mapper;
 
-import java.util.Map;
-
-import com.lovelyfub.domain.user.entity.Role;
-import com.lovelyfub.domain.user.entity.User;
-
+import example.domain.user.entity.Role;
+import example.domain.user.entity.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+
+import java.util.Map;
 
 @Getter
 @Builder

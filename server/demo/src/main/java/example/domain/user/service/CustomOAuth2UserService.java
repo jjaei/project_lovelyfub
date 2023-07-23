@@ -1,7 +1,11 @@
 package example.domain.user.service;
 
-import java.util.Collections;
 
+import example.domain.user.dto.SessionUser;
+import example.domain.user.entity.User;
+import example.domain.user.mapper.OAuthAttributes;
+import example.domain.user.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
@@ -11,13 +15,8 @@ import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
-import com.lovelyfub.domain.user.dto.SessionUser;
-import com.lovelyfub.domain.user.entity.User;
-import com.lovelyfub.domain.user.mapper.OAuthAttributes;
-import com.lovelyfub.domain.user.repository.UserRepository;
-
-import jakarta.servlet.http.HttpSession;
-import lombok.RequiredArgsConstructor;
+import javax.servlet.http.HttpSession;
+import java.util.Collections;
 
 @Service
 @RequiredArgsConstructor
@@ -39,7 +38,7 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         OAuthAttributes attributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());
         
         User user = saveOrUpdate(attributes);
-        httpSession.setAttribute("user", new SessionUser(user)); 
+        httpSession.setAttribute("user", new SessionUser(user));
         
         return new DefaultOAuth2User(
         		Collections.singleton(new SimpleGrantedAuthority(user.getRoleKey())),

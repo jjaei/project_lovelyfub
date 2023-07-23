@@ -1,13 +1,12 @@
 package example.domain.user.controller;
 
+import example.domain.user.dto.SessionUser;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.lovelyfub.domain.user.dto.SessionUser;
-
-import jakarta.servlet.http.HttpSession;
-import lombok.RequiredArgsConstructor;
+import javax.servlet.http.HttpSession;
 
 @RequiredArgsConstructor
 @Controller
