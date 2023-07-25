@@ -3,7 +3,12 @@ package example.domain.store.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import javax.persistence.*;
+import org.hibernate.annotations.ColumnDefault;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 @NoArgsConstructor
 @Getter
 @Setter
@@ -26,6 +31,10 @@ public class Store {
     private String number;
     @Column
     private String instagram;
+
+    @ColumnDefault("0")
+    @Column(name = "likecount", nullable = false)
+    private Integer likeCount;
     @Column(nullable = false)
     private Float latitude;
     @Column(nullable = false)
