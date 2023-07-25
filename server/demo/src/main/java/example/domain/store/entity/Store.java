@@ -26,4 +26,8 @@ public class Store {
     private String number;
     @Column
     private String instagram;
+    @Column(nullable = false)
+    private Float latitude;
+    @Column(nullable = false)
+    private Float longitude;
 }
