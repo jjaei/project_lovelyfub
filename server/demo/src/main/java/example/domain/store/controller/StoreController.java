@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.Positive;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
+import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.List;
 
@@ -41,8 +41,7 @@ public class StoreController {
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
-                InputStream inputStream = getClass().getResourceAsStream(imageUrl);
-                byte[] fileContent = inputStream.readAllBytes();
+                byte[] fileContent = FileUtils.readFileToByteArray(new File(Paths.get(imageUrl).toAbsolutePath().toString()));
                 String encodedString = Base64.getEncoder().encodeToString(fileContent);
                 st.setProfile(encodedString);
             } catch (IOException e) {
@@ -60,8 +59,7 @@ public class StoreController {
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
-                InputStream inputStream = getClass().getResourceAsStream(imageUrl);
-                byte[] fileContent = inputStream.readAllBytes();
+                byte[] fileContent = FileUtils.readFileToByteArray(new File(Paths.get(imageUrl).toAbsolutePath().toString()));
                 String encodedString = Base64.getEncoder().encodeToString(fileContent);
                 st.setProfile(encodedString);
             } catch (IOException e) {
@@ -76,8 +74,7 @@ public class StoreController {
         Store store = service.findStoreDetail(storeid);
         String imageUrl = store.getProfile();
         try {
-            InputStream inputStream = getClass().getResourceAsStream(imageUrl);
-            byte[] fileContent = inputStream.readAllBytes();
+            byte[] fileContent = FileUtils.readFileToByteArray(new File(Paths.get(imageUrl).toAbsolutePath().toString()));
             String encodedString = Base64.getEncoder().encodeToString(fileContent);
             store.setProfile(encodedString);
         } catch (IOException e) {
