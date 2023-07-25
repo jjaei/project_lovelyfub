@@ -3,6 +3,9 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://$MODULE_DIR$/../../server/demo/build/classes/java/main" />
     <exclude-output />
+    <content url="file://$MODULE_DIR$/../../server/demo/build/generated/querydsl">
+      <sourceFolder url="file://$MODULE_DIR$/../../server/demo/build/generated/querydsl" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../server/demo/build/generated/sources/annotationProcessor/java/main">
       <sourceFolder url="file://$MODULE_DIR$/../../server/demo/build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
     </content>
@@ -140,7 +143,6 @@
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm:9.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-devtools:2.7.14" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: mysql:mysql-connector-java:8.0.11" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mariadb.jdbc:mariadb-java-client:3.0.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.protobuf:protobuf-java:2.6.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.activation:jakarta.activation:1.2.2" level="project" />
   </component>

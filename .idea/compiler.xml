@@ -14,6 +14,7 @@
     <bytecodeTargetLevel>
       <module name="demo" target="11" />
       <module name="demo.main" target="11" />
+      <module name="demo.querydsl" target="11" />
       <module name="demo.test" target="11" />
     </bytecodeTargetLevel>
   </component>
