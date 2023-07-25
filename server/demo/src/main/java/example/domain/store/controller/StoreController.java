@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.Positive;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Base64;
 import java.util.List;
 
@@ -40,7 +41,8 @@ public class StoreController {
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
-                byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
+                InputStream inputStream = getClass().getClassLoader().getResourceAsStream(imageUrl);
+                byte[] fileContent = inputStream.readAllBytes();
                 String encodedString = Base64.getEncoder().encodeToString(fileContent);
                 st.setProfile(encodedString);
             } catch (IOException e) {
@@ -58,7 +60,8 @@ public class StoreController {
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
-                byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
+                InputStream inputStream = getClass().getClassLoader().getResourceAsStream(imageUrl);
+                byte[] fileContent = inputStream.readAllBytes();
                 String encodedString = Base64.getEncoder().encodeToString(fileContent);
                 st.setProfile(encodedString);
             } catch (IOException e) {
@@ -73,7 +76,8 @@ public class StoreController {
         Store store = service.findStoreDetail(storeid);
         String imageUrl = store.getProfile();
         try {
-            byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream(imageUrl);
+            byte[] fileContent = inputStream.readAllBytes();
             String encodedString = Base64.getEncoder().encodeToString(fileContent);
             store.setProfile(encodedString);
         } catch (IOException e) {
