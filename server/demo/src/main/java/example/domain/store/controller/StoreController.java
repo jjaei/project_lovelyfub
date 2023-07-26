@@ -41,7 +41,7 @@ public class StoreController {
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
-                byte[] fileContent = FileUtils.readFileToByteArray(new File(Paths.get(imageUrl).toAbsolutePath().toString()));
+                byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
                 String encodedString = Base64.getEncoder().encodeToString(fileContent);
                 st.setProfile(encodedString);
             } catch (IOException e) {
@@ -59,7 +59,7 @@ public class StoreController {
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
-                byte[] fileContent = FileUtils.readFileToByteArray(new File(Paths.get(imageUrl).toAbsolutePath().toString()));
+                byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
                 String encodedString = Base64.getEncoder().encodeToString(fileContent);
                 st.setProfile(encodedString);
             } catch (IOException e) {
@@ -74,7 +74,7 @@ public class StoreController {
         Store store = service.findStoreDetail(storeid);
         String imageUrl = store.getProfile();
         try {
-            byte[] fileContent = FileUtils.readFileToByteArray(new File(Paths.get(imageUrl).toAbsolutePath().toString()));
+            byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
             String encodedString = Base64.getEncoder().encodeToString(fileContent);
             store.setProfile(encodedString);
         } catch (IOException e) {
