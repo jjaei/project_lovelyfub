@@ -38,6 +38,7 @@ public class StoreController {
     public ResponseEntity getCafeList(@Positive @RequestParam int page, @Positive @RequestParam int size) {
         Page<Store> pageStore = service.findStore("cafe",page -1, size);
         List<Store> store = pageStore.getContent();
+        /*
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
@@ -47,7 +48,7 @@ public class StoreController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
     }
     //마켓리스트
@@ -55,7 +56,7 @@ public class StoreController {
     public ResponseEntity getMarketList(@Positive @RequestParam int page, @Positive @RequestParam int size) {
         Page<Store> pageStore = service.findStore("market",page -1, size);
         System.out.println(pageStore);
-        List<Store> store = pageStore.getContent();
+        List<Store> store = pageStore.getContent();/*
         for (Store st : store) {
             String imageUrl = st.getProfile();
             try {
@@ -65,13 +66,13 @@ public class StoreController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
     }
     //상세페이지
     @GetMapping("/store/{id}")
     public ResponseEntity getCafe(@PathVariable("id") @Positive int storeid) {
-        Store store = service.findStoreDetail(storeid);
+        Store store = service.findStoreDetail(storeid);/*
         String imageUrl = store.getProfile();
         try {
             byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
@@ -79,7 +80,7 @@ public class StoreController {
             store.setProfile(encodedString);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         return new ResponseEntity<>(mapper.detailToDetailResponseDto(store), HttpStatus.OK);
     }
     //주변가게찾기
