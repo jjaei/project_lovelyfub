@@ -65,6 +65,7 @@ querydsl {
 }
 sourceSets {
 	main.java.srcDir querydslDir
+	main.java.srcDir 'src/main/java/example/image'
 }
 configurations {
 	querydsl.extendsFrom compileClasspath
