@@ -28,7 +28,7 @@ dependencies {
 	//runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 	//implementation 'mysql:mysql-connector-java'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	//implementation 'org.springframework.boot:spring-boot-starter-security'//jwt 추가
+	//implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
 	implementation 'javax.validation:validation-api:2.0.1.Final'
@@ -44,8 +44,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-test:2.7.11'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
-	testImplementation 'org.springframework.restdocs:spring-boot-test-autoconfigure:2.7.11'
-	testImplementation 'org.springframework.security:spring-security-test'//jwt 추가
+	testImplementation 'org.springframework.restdocs:spring-boot-test-autoconfigure:3.1.11'
+	testImplementation "org.springframework.security:spring-security-test"//jwt 추가
 	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 	// https://mvnrepository.com/artifact/com.auth0/java-jwt

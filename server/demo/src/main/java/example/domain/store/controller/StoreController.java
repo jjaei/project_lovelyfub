@@ -45,17 +45,7 @@ public class StoreController {
     public ResponseEntity getMarketList(@Positive @RequestParam int page, @Positive @RequestParam int size) {
         Page<Store> pageStore = service.findStore("market",page -1, size);
         System.out.println(pageStore);
-        List<Store> store = pageStore.getContent();/*
-        for (Store st : store) {
-            String imageUrl = st.getProfile();
-            try {
-                byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
-                String encodedString = Base64.getEncoder().encodeToString(fileContent);
-                st.setProfile(encodedString);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }*/
+        List<Store> store = pageStore.getContent();
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
     }
     //상세페이지
