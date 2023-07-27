@@ -51,15 +51,7 @@ public class StoreController {
     //상세페이지
     @GetMapping("/store/{id}")
     public ResponseEntity getCafe(@PathVariable("id") @Positive int storeid) {
-        Store store = service.findStoreDetail(storeid);/*
-        String imageUrl = store.getProfile();
-        try {
-            byte[] fileContent = FileUtils.readFileToByteArray(new File(imageUrl));
-            String encodedString = Base64.getEncoder().encodeToString(fileContent);
-            store.setProfile(encodedString);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
+        Store store = service.findStoreDetail(storeid);
         return new ResponseEntity<>(mapper.detailToDetailResponseDto(store), HttpStatus.OK);
     }
     //주변가게찾기
