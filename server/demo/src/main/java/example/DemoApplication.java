@@ -19,7 +19,7 @@ public class DemoApplication {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedMethods("*")
-                        .allowedOrigins("http://ec2-3-39-210-13.ap-northeast-2.compute.amazonaws.com:3000");
+                        .allowedOrigins("http://localhost:3000");
             }
         };
     }
