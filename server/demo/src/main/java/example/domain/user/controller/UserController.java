@@ -12,6 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.reactive.result.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -28,21 +29,25 @@ public class UserController {
 	private final LikesService likesService;
 
 	@GetMapping("/")
-	public String index(Model model) {
+	public RedirectView index(Model model) {
+		RedirectView redirectView = new RedirectView();
+		redirectView.setUrl("http://localhost:3000/main");
 		SessionUser user = (SessionUser) httpSession.getAttribute("user");
 		if (user != null) {
 			model.addAttribute("name", user.getName());
 		}
-		return "redirect:/main";
+		return redirectView;
 	}
 
 		@GetMapping("/mypage")
-		public String myPage(Model model, HttpServletRequest request){
+		public RedirectView myPage(Model model, HttpServletRequest request){
+			RedirectView redirectView = new RedirectView();
 			HttpSession session = request.getSession();
 			SessionUser sessionUser = (SessionUser) session.getAttribute("user");
 
 			if(sessionUser == null) {
-				return "redirect:/login";
+				redirectView.setUrl("http://localhost:3000/login");
+				return redirectView;
 			} else {
 				System.out.println(sessionUser.getNickname());
 				System.out.println(sessionUser.getEmail());
@@ -67,7 +72,8 @@ public class UserController {
 					model.addAttribute("store_id", likesStore.getStore().getStoreid());
 				}
 				model.addAttribute("likeStores",likeStores);
-				return "mypage";
+				redirectView.setUrl("http://localhost:3000/mypage");
+				return redirectView;
 			}
 		}
 }

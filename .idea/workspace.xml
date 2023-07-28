@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/user/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690532972243</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Changes">
+      <created>1690534598700</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690534598700</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
