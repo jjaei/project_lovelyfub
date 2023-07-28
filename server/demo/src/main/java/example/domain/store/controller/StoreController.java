@@ -50,7 +50,7 @@ public class StoreController {
     }
     //상세페이지
     @GetMapping("/store/{id}")
-    public ResponseEntity getCafe(@PathVariable("id") @Positive int storeid) {
+    public ResponseEntity getCafe(@PathVariable("id") int storeid) {
         Store store = service.findStoreDetail(storeid);
         return new ResponseEntity<>(mapper.detailToDetailResponseDto(store), HttpStatus.OK);
     }
