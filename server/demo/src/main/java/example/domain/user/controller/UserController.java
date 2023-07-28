@@ -27,14 +27,14 @@ public class UserController {
 	private final StoreRepository storeRepository;
 	private final LikesService likesService;
 
-	@GetMapping("/login")
-		public String index(Model model) {
-			SessionUser user = (SessionUser) httpSession.getAttribute("user");
-			if( user != null ) {
-				model.addAttribute("name", user.getName());
-			}
-			return "main";
+	@GetMapping("/")
+	public String index(Model model) {
+		SessionUser user = (SessionUser) httpSession.getAttribute("user");
+		if (user != null) {
+			model.addAttribute("name", user.getName());
 		}
+		return "redirect:/main";
+	}
 
 		@GetMapping("/mypage")
 		public String myPage(Model model, HttpServletRequest request){
