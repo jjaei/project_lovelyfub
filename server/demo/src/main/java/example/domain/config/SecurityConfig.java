@@ -25,7 +25,9 @@ public class SecurityConfig{
                 .and()
                 .oauth2Login() // OAuth 2 로그인 설정 진입점
                 .userInfoEndpoint() // OAuth 2 로그인 성공 이후 사용자 정보를 가져올 때의 설정
-                .userService(customOAuth2UserService);
+                .userService(customOAuth2UserService)
+                .and()
+                .defaultSuccessUrl("http://localhost:3000/main", true);
 
         return http.build();
 
