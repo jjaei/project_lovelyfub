@@ -28,7 +28,7 @@ public class UserController {
 	private final StoreRepository storeRepository;
 	private final LikesService likesService;
 
-	@GetMapping("/")
+	@GetMapping("/user")
 	public ResponseEntity<Object> login(Model model) {
 		SessionUser user = (SessionUser) httpSession.getAttribute("user");
 		if (user != null) {
