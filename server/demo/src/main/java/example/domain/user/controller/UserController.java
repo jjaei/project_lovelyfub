@@ -9,16 +9,16 @@ import example.domain.store.service.StoreService;
 import example.domain.user.dto.SessionUser;
 import example.domain.user.entity.User;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.reactive.result.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RequiredArgsConstructor
 @Controller
@@ -29,14 +29,18 @@ public class UserController {
 	private final LikesService likesService;
 
 	@GetMapping("/")
-	public RedirectView index(Model model) {
-		RedirectView redirectView = new RedirectView();
-		redirectView.setUrl("http://localhost:3000/main");
+	public ResponseEntity<Object> login(Model model) {
 		SessionUser user = (SessionUser) httpSession.getAttribute("user");
 		if (user != null) {
-			model.addAttribute("name", user.getName());
+			Map<String, Object> userInfo = new HashMap<>();
+			userInfo.put("name", user.getName());
+			userInfo.put("id", user.getId());
+			userInfo.put("email", user.getEmail());
+			userInfo.put("nickname", user.getNickname());
+			return ResponseEntity.ok(userInfo);
+		} else {
+			return ResponseEntity.ok(Collections.emptyMap());
 		}
-		return redirectView;
 	}
 
 		@GetMapping("/mypage")
