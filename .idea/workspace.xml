@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/WebMvcConfig.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/global/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/global/config/WebMvcConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +98,7 @@
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\src\main\java\example\file\image" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="example.domain.config" />
       <recent name="example.global.cors" />
     </key>
   </component>
@@ -380,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690554741737</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Changes">
+      <created>1690603501513</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1690603501513</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
