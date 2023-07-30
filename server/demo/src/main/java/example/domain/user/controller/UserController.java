@@ -21,14 +21,14 @@ import javax.servlet.http.HttpSession;
 import java.util.*;
 
 @RequiredArgsConstructor
-@Controller
+@RestController
 public class UserController {
 	private final SessionUser SessionUser;
 	private final HttpSession httpSession;
 	private final StoreRepository storeRepository;
 	private final LikesService likesService;
 
-	@GetMapping("/")
+	@GetMapping("/user")
 	public ResponseEntity<Object> login(Model model) {
 		SessionUser user = (SessionUser) httpSession.getAttribute("user");
 		if (user != null) {
