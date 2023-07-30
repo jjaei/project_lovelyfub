@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
 import java.util.*;
 
 @RequiredArgsConstructor
-@Controller
+@RestController
 public class UserController {
 	private final SessionUser SessionUser;
 	private final HttpSession httpSession;
