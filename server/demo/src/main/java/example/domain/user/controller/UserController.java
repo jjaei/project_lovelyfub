@@ -6,8 +6,11 @@ import example.domain.store.entity.Store;
 import example.domain.store.repository.StoreRepository;
 import example.domain.user.dto.SessionUser;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,8 +26,19 @@ public class UserController {
 	private final StoreRepository storeRepository;
 	private final LikesService likesService;
 
+//	@GetMapping("/user")
+//	public String oauthLoginInfo(Authentication authentication) {
+//		OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
+//		Map<String, Object> attributes = oAuth2User.getAttributes();
+//		return attributes.toString();
+//	}
+
 	@GetMapping("/user")
 	public ResponseEntity<Object> login(Model model) {
+		// 응답 헤더에 CORS 설정 추가
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("Access-Control-Allow-Origin", "http://localhost:3000");
+		headers.add("Access-Control-Allow-Credentials", "true");
 		SessionUser user = (SessionUser) httpSession.getAttribute("user");
 		if (user != null) {
 			Map<String, Object> userInfo = new HashMap<>();
