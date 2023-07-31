@@ -26,7 +26,7 @@ public class OAuthAttributes {
 	            return ofNaver("id", attributes);
 	        }
 	        
-	        return null;
+	        return OAuthAttributes.builder().build();
 	    }
 		
 	private static OAuthAttributes ofNaver(String userNameAttributeName, Map<String, Object> attributes) {
