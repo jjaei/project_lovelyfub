@@ -9,12 +9,15 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
 @RequiredArgsConstructor
 @EnableWebSecurity
 @Configuration
-public class SecurityConfig{
+public class SecurityConfig {
+
+    @Autowired
     private final CustomOAuth2UserService customOAuth2UserService;
 
     @Autowired
@@ -22,19 +25,23 @@ public class SecurityConfig{
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.csrf().disable();
-        http.authorizeRequests()
-                .anyRequest().permitAll()
+        http
+                .csrf().disable()
+                .headers().frameOptions().disable()
                 .and()
-                .logout()
-                .logoutSuccessUrl("/")
+                .cors()
+                .and()
+                .sessionManagement()  // 세션 정책 설정
+                .and()
+                .authorizeRequests()
+                .anyRequest()
+                .permitAll()
                 .and()
                 .oauth2Login() // OAuth 2 로그인 설정 진입점
-                .userInfoEndpoint() // OAuth 2 로그인 성공 이후 사용자 정보를 가져올 때의 설정
-                .userService(customOAuth2UserService)
-                .and()
-                .defaultSuccessUrl("http://localhost:3000/main", true);
-
+                .successHandler(new UserLoginSuccessHandler())
+                .defaultSuccessUrl("http://localhost:3000/main", true)
+                .userInfoEndpoint()
+                .userService(customOAuth2UserService);
         return http.build();
 
     }
