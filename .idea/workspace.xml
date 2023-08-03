@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/mapper/OAuthAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/mapper/OAuthAttributes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-    </list>
+    <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -439,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690787260232</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Changes">
+      <created>1690848096882</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1690848096882</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
