@@ -15,13 +15,6 @@ public class CorsConfig {
         public CorsFilter corsFilter(){
             UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
             CorsConfiguration config = new CorsConfiguration();
-            config.setAllowCredentials(true);
-            config.addAllowedOriginPattern("*");
-            config.addExposedHeader("Authorization");
-            config.addAllowedHeader("*");
-            config.addAllowedMethod("*");
-            config.setExposedHeaders(Arrays.asList("Authorization", "Authorization-refresh"));
-            source.registerCorsConfiguration("/**",config);
             return new CorsFilter(source);
 
         }
