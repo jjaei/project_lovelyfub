@@ -1,5 +1,7 @@
 package example.domain.config;
 
+import example.domain.security.jwt.JwtTokenProvider;
+import example.domain.security.oauth.OAuth2AuthenticationSuccessHandler;
 import example.domain.user.service.CustomOAuth2UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ public class SecurityConfig {
 
     @Autowired
     private CorsConfig corsConfig;
+    private final OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler;
+    private final JwtTokenProvider jwtTokenProvider;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -31,17 +35,25 @@ public class SecurityConfig {
                 .and()
                 .cors()
                 .and()
-                .sessionManagement()  // 세션 정책 설정
+                .sessionManagement().sessionCreationPolicy((SessionCreationPolicy.STATELESS)) // 세션 정책 설정
                 .and()
                 .authorizeRequests()
                 .anyRequest()
                 .permitAll()
                 .and()
                 .oauth2Login() // OAuth 2 로그인 설정 진입점
-                .successHandler(new UserLoginSuccessHandler())
-                .defaultSuccessUrl("http://localhost:3000/main", true)
+                .authorizationEndpoint()
+                .baseUri("/oauth2/authorize")
+                .and()
+                .redirectionEndpoint()
+                .baseUri("/oauth2/callback/*")
+                .and()
                 .userInfoEndpoint()
-                .userService(customOAuth2UserService);
+                .userService(customOAuth2UserService)
+                .and()
+                .successHandler(oAuth2AuthenticationSuccessHandler)
+                .and()
+                .apply(new JwtSecurityConfig(jwtTokenProvider));
         return http.build();
 
     }
