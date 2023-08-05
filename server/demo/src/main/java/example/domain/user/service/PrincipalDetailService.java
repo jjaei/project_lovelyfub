@@ -1,36 +1,37 @@
-package example.domain.user.dto;
+package example.domain.user.service;
 
 import example.domain.user.entity.User;
 import example.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 
 @Service
 @RequiredArgsConstructor
 @Transactional
+@Slf4j
 public class PrincipalDetailService  implements UserDetailsService {
 
     private  final UserRepository userRepository;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-
-        User user = userRepository.findByEmail(email).get();
-        if(user == null){
+        Optional<User> user = userRepository.findByEmail(email);
+        if(user.isEmpty()) {
             throw new UsernameNotFoundException(email);
         }
-        UserDetails result= org.springframework.security.core.userdetails.User.builder()
-                .username(user.getEmail())
-                .password(user.getPicture())
-                .roles(user.getRole().toString())
+
+        return org.springframework.security.core.userdetails.User.builder()
+                .username(user.get().getEmail())
+                .password(user.get().getPicture())
+                .roles(user.get().getRole().toString())
                 .build();
-
-        return result;
     }
-
 }

@@ -7,28 +7,30 @@ import example.domain.store.repository.StoreRepository;
 import example.domain.user.entity.User;
 import example.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import net.minidev.json.JSONObject;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.security.Principal;
 import java.util.*;
 
+@Slf4j
 @RequiredArgsConstructor
 @RestController
 public class UserController {
+
 	private final StoreRepository storeRepository;
 	private final LikesService likesService;
 	private final UserRepository userRepository;
 
 	@GetMapping("/user")
-	public JSONObject oauthLoginInfo(@AuthenticationPrincipal OAuth2User user) {
+	public JSONObject oauthLoginInfo(Principal principal) {
 		JSONObject obj = new JSONObject();
 		try {
-			String email = user.getAttribute("email");
+			String email = principal.getName();
 			Optional<User> optionalUser = userRepository.findByEmail(email);
 			if (optionalUser.isPresent()) {
 				User users = optionalUser.get();
@@ -57,7 +59,7 @@ public class UserController {
 			responseData.put("name", user.getName());
 			responseData.put("nickname", user.getNickname());
 			responseData.put("email", user.getEmail());
-			responseData.put("email", user.getPicture());
+			responseData.put("picture", user.getPicture());
 
 			List<Likes> likeStore = likesService.getAllLikes();
 			List<Store> likeStores = new ArrayList<>();
