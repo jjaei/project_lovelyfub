@@ -49,13 +49,23 @@ public class UserController {
 	}
 
 	@GetMapping("/mypage")
-	public ResponseEntity<Map<String, Object>> myPage(@RequestParam String userid, String email){
+	public ResponseEntity<Map<String, Object>> myPage(Principal principal){
 
 		Map<String, Object> responseData = new HashMap<>();
-		Optional<User> userOptional = userRepository.findByEmail(email);
 
-		if (userOptional.isPresent()) {
-			User user = userOptional.get();
+			String email = principal.getName();
+			Optional<User> optionalUser = userRepository.findByEmail(email);
+
+		if (optionalUser == null) {
+			// 로그인이 안 되어있는 상태면 로그인 페이지로
+			// 예를 들어 로그인 페이지의 URL이 /login 이라고 가정하면 아래와 같이 리다이렉트할 수 있음
+			return ResponseEntity.status(HttpStatus.FOUND)
+					.header("Location", "/login")
+					.build();
+		}
+
+		if (optionalUser.isPresent()) {
+			User user = optionalUser.get();
 			responseData.put("name", user.getName());
 			responseData.put("nickname", user.getNickname());
 			responseData.put("email", user.getEmail());
@@ -75,6 +85,7 @@ public class UserController {
 			}
 			responseData.put("likeStores", likeStores);
 		}
+
 		// 200 OK 상태 코드와 responseData를 JSON 형태로 반환
 		return ResponseEntity.ok(responseData);
 	}
