@@ -1,6 +1,7 @@
 package example.domain.config;
 
 import example.domain.security.jwt.JwtTokenProvider;
+import example.domain.security.oauth.CookieAuthorizationRequestRepository;
 import example.domain.security.oauth.OAuth2AuthenticationSuccessHandler;
 import example.domain.user.service.CustomOAuth2UserService;
 import lombok.RequiredArgsConstructor;
@@ -26,6 +27,7 @@ public class SecurityConfig {
     private CorsConfig corsConfig;
     private final OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler;
     private final JwtTokenProvider jwtTokenProvider;
+    private final CookieAuthorizationRequestRepository cookieAuthorizationRequestRepository;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -44,6 +46,7 @@ public class SecurityConfig {
                 .oauth2Login() // OAuth 2 로그인 설정 진입점
                 .authorizationEndpoint()
                 .baseUri("/oauth2/authorize")
+                .authorizationRequestRepository(cookieAuthorizationRequestRepository)
                 .and()
                 .redirectionEndpoint()
                 .baseUri("/oauth2/callback/*")
