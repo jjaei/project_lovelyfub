@@ -5,52 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_restdocs_spring_boot_test_autoconfigure_2_7_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/demo.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.querydsl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.querydsl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/demo.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-07-28__4_52_________Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-07-28_오후_4_52,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/SecurityConfig$MyCustomDsl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/SecurityConfig$MyCustomDsl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/dto/PrincipalDetailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/service/CustomOAuth2UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/service/CustomOAuth2UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/10.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/11.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/12.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/13.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/15.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/16.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/18.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/19.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/20.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/22.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/23.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/24.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/25.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/27.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/28.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/29.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/30.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/image/9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/test/example/DemoApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +41,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="demo" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -113,15 +75,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tr-pr/IdeaProjects/project_lovelyfub/server/demo/build/classes/java/main/example&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/tr-pr/IdeaProjects/project_lovelyfub/server/demo/build/classes/java/main/example",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\build\classes\java\main\example" />
@@ -495,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691040123337</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Changes">
+      <created>1691587287310</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1691587287310</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
