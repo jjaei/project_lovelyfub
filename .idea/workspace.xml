@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_restdocs_spring_boot_test_autoconfigure_2_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.querydsl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.querydsl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +30,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -464,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691587287310</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Changes">
+      <created>1691592642303</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1691592642303</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
