@@ -23,11 +23,9 @@ public class CookieUtil {
     }
 
     public static void addCookie(HttpServletResponse response, String name, String value, int maxAge) {
-        // TODO : secure 설정
         Cookie cookie = new Cookie(name, value);
         cookie.setPath("/");
-        // TODO : 배포 시 HttpOnly(true) 설정
-        // cookie.setHttpOnly(true);
+        cookie.setHttpOnly(true);
         cookie.setMaxAge(maxAge);
         response.addCookie(cookie);
     }
