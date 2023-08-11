@@ -14,6 +14,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.CorsUtils;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.List;
@@ -37,13 +38,15 @@ public class SecurityConfig {
                 .csrf().disable()
                 .headers().frameOptions().disable()
                 .and()
-                .cors()
-                .and()
                 .sessionManagement().sessionCreationPolicy((SessionCreationPolicy.STATELESS)) // 세션 정책 설정
                 .and()
                 .authorizeRequests()
+                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                 .anyRequest()
                 .permitAll()
+                .and()
+                .cors()
+                .configurationSource(corsConfigurationSource())
                 .and()
                 .oauth2Login() // OAuth 2 로그인 설정 진입점
                 .authorizationEndpoint()
