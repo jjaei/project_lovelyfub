@@ -17,6 +17,6 @@ public class UserLoginSuccessHandler implements AuthenticationSuccessHandler {
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
-        response.sendRedirect("http://localhost:3000/user");
+        response.sendRedirect("https://lovelyfub.netlify.app/user");
     }
 }
