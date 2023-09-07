@@ -1,5 +1,6 @@
 # project_lovelyfub
 
+### 🩵 1차 개발 기간: 2023. 07. 12 ~ 2023. 08. 02
 ### 👣 배포 주소: https://lovelyfub.netlify.app/main
 
 ### 👀 ABOUT US
