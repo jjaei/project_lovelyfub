@@ -1,5 +1,7 @@
 # project_lovelyfub
 
+### 👣 배포 주소: https://lovelyfub.netlify.app/main
+
 ### 👀 ABOUT US
 
 ![image](https://github.com/jjaei/project_lovelyfub/assets/120344687/6b307d7b-03a9-4177-ae2b-849ff83b481d)
