@@ -15,6 +15,8 @@ public class storeResponseDto {
     private String address;
     private String number;
     private String instagram;
+    private String location;
+    private String detaillocation;
     private float latitude;
     private float longitude;
 }

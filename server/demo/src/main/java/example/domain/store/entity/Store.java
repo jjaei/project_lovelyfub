@@ -31,6 +31,11 @@ public class Store {
     private String number;
     @Column
     private String instagram;
+    @Column
+    private String location;
+
+    @Column
+    private String detaillocation;
 
     @ColumnDefault("0")
     @Column(name = "likecount", nullable = false)

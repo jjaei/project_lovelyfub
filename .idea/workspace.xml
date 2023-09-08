@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10__11_57_________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2023-08-10__11_57_________Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10__11_57_________Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10_오후_11_57,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/SecurityConfig$MyCustomDsl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10_오후_11_57,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10_오후_11_57,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/controller/StoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/controller/StoreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/service/StoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/service/StoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig$MyCustomDsl.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/WebMvcConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/dto/storeResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/dto/storeResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/QStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/QStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/querydsl/example/domain/store/entity/QStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/querydsl/example/domain/store/entity/QStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/querydsl/generated/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/libs/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/backup-dir/StoreMapperImpl.class1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/LikesController.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/LikesService.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreRepository.class.uniqueId3" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreRepository.class.uniqueId3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreService.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/entity/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +93,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2Sykn2xilh6h9L6wP6xPAlBMCKV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -96,6 +115,7 @@
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\build\classes\java\main\example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub_0903\server\demo\build\libs" />
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\build\libs" />
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub" />
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\src\main\java\example\file\image" />
@@ -492,7 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691679734228</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Changes">
+      <created>1694183914088</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1694183914088</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Changes">
+      <created>1694185922905</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1694185922905</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
