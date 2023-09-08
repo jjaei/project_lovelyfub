@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10__11_57_________Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10_오후_11_57,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/SecurityConfig$MyCustomDsl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10_오후_11_57,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-08-10_오후_11_57,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/dto/storeResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/dto/storeResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/QStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/QStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/querydsl/example/domain/store/entity/QStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/querydsl/example/domain/store/entity/QStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/querydsl/generated/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/libs/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/libs/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/libs/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/backup-dir/StoreMapperImpl.class1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/LikesController.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/LikesService.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreRepository.class.uniqueId3" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreRepository.class.uniqueId3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/StoreService.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/entity/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,15 +83,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tr-pr/IdeaProjects/project_lovelyfub/server/demo/build/classes/java/main/example&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/tr-pr/IdeaProjects/project_lovelyfub_0903/server/demo/build/generated/querydsl/generated/example/domain/store/mapper",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\build\classes\java\main\example" />
@@ -526,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694185922905</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Changes">
+      <created>1694190277023</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1694190277024</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Changes">
+      <created>1694190575795</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1694190575795</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
