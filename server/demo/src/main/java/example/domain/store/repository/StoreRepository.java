@@ -11,5 +11,8 @@ import java.util.Optional;
 @Repository
 public interface StoreRepository extends JpaRepository<Store, Integer> {
     Page<Store> findAllByType(String type, Pageable pageable);
+    Page<Store> findAllByLocationAndType(String location, String type, Pageable pageable);
+    Page<Store> findAllByDetaillocationAndType(String detaillocation, String type, Pageable pageable);
+    Page<Store> findAllByLocationAndDetaillocationAndType(String location, String detaillocation, String type, Pageable pageable);
     Optional<Store> findByStoreid(Integer store_id);
 }

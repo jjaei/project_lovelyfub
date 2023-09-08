@@ -23,9 +23,20 @@ public class StoreService {
     }
 
     @Transactional(readOnly = true)
-    public Page<Store> findStore(String type, int page, int size){
+    public Page<Store> findStore(String location, String detaillocation, String type, int page, int size){
         Pageable pageable = PageRequest.of(page, size);
-        return storeRepository.findAllByType(type, pageable);
+        if(location!=null&&detaillocation!=null) {
+            return storeRepository.findAllByLocationAndDetaillocationAndType(location, detaillocation, type, pageable);
+        }
+        else if(location==null&&detaillocation!=null){
+            return storeRepository.findAllByDetaillocationAndType(detaillocation, type, pageable);
+        }
+        else if(location!=null&&detaillocation==null){
+            return storeRepository.findAllByLocationAndType(location,type,pageable);
+        }
+        else{
+            return storeRepository.findAllByType(type, pageable);
+        }
     }
 
     public Store findStoreDetail(int storeid) {

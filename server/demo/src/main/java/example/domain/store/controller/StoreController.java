@@ -35,15 +35,15 @@ public class StoreController {
     }
     //식당 리스트
     @GetMapping("/cafe")
-    public ResponseEntity getCafeList(@Positive @RequestParam int page, @Positive @RequestParam int size) {
-        Page<Store> pageStore = service.findStore("cafe",page -1, size);
+    public ResponseEntity getCafeListLocation(String location,String detaillocation, @Positive @RequestParam int page, @Positive @RequestParam int size) {
+        Page<Store> pageStore = service.findStore(location, detaillocation,"cafe",page -1, size);
         List<Store> store = pageStore.getContent();
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
     }
     //마켓리스트
     @GetMapping("/market")
-    public ResponseEntity getMarketList(@Positive @RequestParam int page, @Positive @RequestParam int size) {
-        Page<Store> pageStore = service.findStore("market",page -1, size);
+    public ResponseEntity getMarketList(String location,String detaillocation, @Positive @RequestParam int page, @Positive @RequestParam int size) {
+        Page<Store> pageStore = service.findStore(location, detaillocation,"market",page -1, size);
         System.out.println(pageStore);
         List<Store> store = pageStore.getContent();
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
