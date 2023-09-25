@@ -5,7 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_cloudformation_1_11_792.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_core_1_11_792.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_ec2_1_11_792.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_kms_1_11_792.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_aws_java_sdk_s3_1_11_792.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amazonaws_jmespath_java_1_11_792.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_2_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_aws_autoconfigure_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_aws_context_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_aws_core_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_aws_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__software_amazon_ion_ion_java_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-09-08__5_45_________Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-09-08_오후_5_45,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]1/StoreController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-09-08_오후_5_45,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]1/StoreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-09-08_오후_5_45,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]1/StoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/2023-09-08_오후_5_45,_업데이트_전에_커밋되지_않은_변경_내용_[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/DemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/JwtSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/config/UserLoginSuccessHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/controller/LikesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/dto/LikesDto$LikesDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/dto/LikesDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/entity/Likes$LikesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/entity/Likes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/entity/QLikes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/repository/LikesRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/likes/service/LikesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/main/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/CookieUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/jwt/AccessTokenDto$AccessTokenDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/jwt/AccessTokenDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/jwt/ExpireTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/jwt/JwtTokenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/jwt/JwtTokenProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/oauth/CookieAuthorizationRequestRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/security/oauth/OAuth2AuthenticationSuccessHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/controller/StoreController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/dto/storeDetailsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/dto/storeResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/QStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/entity/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/mapper/StoreMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/mapper/StoreMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreLikeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreLikeRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/service/StoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/dto/SessionUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/entity/QUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/mapper/OAuthAttributes$OAuthAttributesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/mapper/OAuthAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/service/CustomOAuth2UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/user/service/PrincipalDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/exception/BusinessLogicException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/exception/DuplicateResourceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/exception/ExceptionCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/ErrorResponse$ConstraintViolationError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/ErrorResponse$FieldError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/ListResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/MultiResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/PageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/global/response/SingleResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/querydsl/example/domain/store/entity/QStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/querydsl/example/domain/store/entity/QStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/querydsl/generated/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/generated/querydsl/generated/example/domain/store/mapper/StoreMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/generated/sources/annotationProcessor/java/main/example/domain/store/mapper/StoreMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/controller/StoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeDetailsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeDetailsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/dto/storeResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/entity/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/repository/StoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/repository/StoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/service/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/service/StoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/user/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/user/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +141,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,15 +169,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/tr-pr/IdeaProjects/project_lovelyfub_0903/server/demo/build/generated/querydsl/generated/example/domain/store/mapper",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tr-pr/IdeaProjects/project_lovelyfub_0903/server/demo/build/generated/querydsl/generated/example/domain/store/mapper&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub_0903\server\demo\build\generated\querydsl\generated\example\domain\store\mapper" />
@@ -100,6 +190,7 @@
       <recent name="C:\Users\tr-pr\IdeaProjects\project_lovelyfub\server\demo\src\main\java\example\file\image" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="example.global.S3" />
       <recent name="example.domain.config" />
       <recent name="example.global.cors" />
     </key>
@@ -533,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694192109850</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Changes">
+      <created>1694193338565</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1694193338565</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

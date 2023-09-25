@@ -39,6 +39,26 @@ public class StoreService {
         }
     }
 
+    @Transactional(readOnly = true)
+    public Page<Store> findStore(String location, String detaillocation, int page, int size){
+        Pageable pageable = PageRequest.of(page, size);
+        if(location!=null&&detaillocation!=null) {
+            return storeRepository.findAllByLocationAndDetaillocation(location, detaillocation,  pageable);
+        }
+        else if(location==null&&detaillocation!=null){
+            return storeRepository.findAllByDetaillocation(detaillocation,  pageable);
+        }
+        else if(location!=null&&detaillocation==null){
+            return storeRepository.findAllByLocation(location,pageable);
+        }
+        else{
+            return storeRepository.findAll(pageable);
+        }
+    }
+    public Store findStoreKeyword(String keyword) {
+        return storeRepository.findByFieldNameContaining(keyword)
+                .orElseThrow(() -> new BusinessLogicException(ExceptionCode.STORE_NOT_FOUND));
+    }
     public Store findStoreDetail(int storeid) {
         return storeRepository.findByStoreid(storeid)
                 .orElseThrow(() -> new BusinessLogicException(ExceptionCode.STORE_NOT_FOUND));

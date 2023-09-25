@@ -15,4 +15,12 @@ public interface StoreRepository extends JpaRepository<Store, Integer> {
     Page<Store> findAllByDetaillocationAndType(String detaillocation, String type, Pageable pageable);
     Page<Store> findAllByLocationAndDetaillocationAndType(String location, String detaillocation, String type, Pageable pageable);
     Optional<Store> findByStoreid(Integer store_id);
+
+    Optional<Store> findByFieldNameContaining(String keyword);
+
+    Page<Store> findAll(Pageable pageable);
+    Page<Store> findAllByLocation(String location, Pageable pageable);
+    Page<Store> findAllByDetaillocation(String detaillocation, Pageable pageable);
+    Page<Store> findAllByLocationAndDetaillocation(String location, String detaillocation, Pageable pageable);
+
 }

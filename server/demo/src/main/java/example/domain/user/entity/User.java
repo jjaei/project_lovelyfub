@@ -1,6 +1,7 @@
 package example.domain.user.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
@@ -48,4 +49,6 @@ public class User{
 	public String getRoleKey() {
 		return this.role.getKey();
 	}
+
+
 }

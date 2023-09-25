@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-09-09T01:38:05+0900",
+    date = "2023-09-26T02:19:25+0900",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-8.1.1.jar, environment: Java 11.0.17 (Azul Systems, Inc.)"
 )
 @Component
@@ -40,6 +40,8 @@ public class StoreMapperImpl implements StoreMapper {
         storeDetailsDto.setName( store.getName() );
         storeDetailsDto.setProfile( store.getProfile() );
         storeDetailsDto.setIntroduction( store.getIntroduction() );
+        storeDetailsDto.setCategory( store.getCategory() );
+        storeDetailsDto.setUsertype( store.getUsertype() );
 
         return storeDetailsDto;
     }
