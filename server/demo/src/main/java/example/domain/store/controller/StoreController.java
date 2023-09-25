@@ -57,8 +57,8 @@ public class StoreController {
     //키워드포함하는 가게 찾기
     @GetMapping("/store/search")
     public ResponseEntity getStore(String keyword) {
-        Store store = service.findStoreKeyword(keyword);
-        return new ResponseEntity<>(mapper.detailToDetailResponseDto(store), HttpStatus.OK);
+        List<Store> store = service.findStoreKeyword(keyword);
+        return new ResponseEntity<>(mapper.storeToStoreResponseDto(store), HttpStatus.OK);
     }
     //상세페이지
     @GetMapping("/store/{id}")
