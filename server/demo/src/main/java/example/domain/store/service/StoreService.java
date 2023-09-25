@@ -56,7 +56,7 @@ public class StoreService {
         }
     }
     public Store findStoreKeyword(String keyword) {
-        return storeRepository.findByFieldNameContaining(keyword)
+        return storeRepository.findByNameContaining(keyword)
                 .orElseThrow(() -> new BusinessLogicException(ExceptionCode.STORE_NOT_FOUND));
     }
     public Store findStoreDetail(int storeid) {

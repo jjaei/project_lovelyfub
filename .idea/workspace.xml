@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/repository/StoreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/service/StoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/classes/java/main/example/domain/store/service/StoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/libs/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/libs/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/compileTransaction/backup-dir/StoreMapperImpl.class1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/repository/StoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/repository/StoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/service/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/service/StoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690126371519</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Changes">
-      <created>1690248732111</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1690248732111</updated>
     </task>
     <task id="LOCAL-00003" summary="Changes">
       <created>1690289267189</created>
@@ -544,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695662446257</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Changes">
+      <created>1695663327271</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1695663327271</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
