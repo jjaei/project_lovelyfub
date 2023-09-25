@@ -7,8 +7,6 @@
     <list default="true" id="699d3594-a325-4603-bf1f-76c0936dba0c" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/controller/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/service/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/java/example/domain/store/service/StoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,13 +199,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690126371519</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Changes">
-      <created>1690292431795</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1690292431795</updated>
     </task>
     <task id="LOCAL-00005" summary="Changes">
       <created>1690299842377</created>
@@ -545,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695663946991</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Changes">
+      <created>1695666626616</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1695666626616</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

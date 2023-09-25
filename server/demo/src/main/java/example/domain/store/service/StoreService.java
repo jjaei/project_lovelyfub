@@ -56,7 +56,11 @@ public class StoreService {
         }
     }
     public List<Store> findStoreKeyword(String keyword) {
-        return storeRepository.findByNameContaining(keyword);
+        List<Store> stores = new ArrayList<>();
+        for (Store store : storeRepository.findByNameContaining(keyword)) {
+            stores.add(store);
+        }
+        return stores;
     }
     public Store findStoreDetail(int storeid) {
         return storeRepository.findByStoreid(storeid)
