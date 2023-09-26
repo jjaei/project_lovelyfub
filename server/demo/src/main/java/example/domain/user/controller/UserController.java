@@ -45,6 +45,7 @@ public class UserController {
 				obj.put("email", users.getEmail());
 				obj.put("nickname", users.getNickname());
 				obj.put("picture", users.getPicture());
+				obj.put("sns_link", users.getSns_link());
 				obj.put("id", users.getId());
 			}
 			return obj;
@@ -76,6 +77,7 @@ public class UserController {
 			responseData.put("nickname", user.getNickname());
 			responseData.put("email", user.getEmail());
 			responseData.put("picture", user.getPicture());
+			responseData.put("sns_link", user.getSns_link());
 
 			List<Likes> likeStore = likesService.getAllLikes();
 			List<Store> likeStores = new ArrayList<>();
@@ -111,4 +113,5 @@ public class UserController {
 		}
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
 	}
+
 }
