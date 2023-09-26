@@ -1,16 +1,26 @@
 package example.domain.user.entity;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.*;
-import java.security.AuthProvider;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @AllArgsConstructor
 @Entity
 @Getter
+@Setter
 @Builder
 @Component
 public class User{
@@ -34,9 +44,20 @@ public class User{
 	@Column(nullable = false)
 	private String nickname;
 
+	@Column(nullable = false)
+	private String gender;
+
+	@Column(nullable = false)
+	private String birthyear;
+
+	@Column(nullable = false)
+	private String birthday;
+
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
 	private Role role;
+
+	private String sns_link;
 
 	public User update(String name, String email, String picture) {
 		this.name = name;

@@ -2,7 +2,6 @@ package example.domain.user.dto;
 
 import example.domain.user.entity.User;
 import lombok.Getter;
-import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
@@ -14,12 +13,13 @@ public class SessionUser implements Serializable {
 	private String nickname;
 	private String email;
 	private String picture;
-	private Long id;
+	private String sns_link;
 
 	public SessionUser(User user) {
 		this.name = user.getName();
 		this.nickname = user.getNickname();
 		this.email = user.getEmail();
 		this.picture = user.getPicture();
+		this.sns_link = getSns_link();
 	}
 }
