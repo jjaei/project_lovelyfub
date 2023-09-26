@@ -19,4 +19,6 @@ public class storeResponseDto {
     private String detaillocation;
     private float latitude;
     private float longitude;
+    private String category;
+    private String usertype;
 }

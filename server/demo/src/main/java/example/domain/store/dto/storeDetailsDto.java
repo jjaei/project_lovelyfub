@@ -10,4 +10,6 @@ public class storeDetailsDto {
     private String name;
     private String profile;
     private String introduction;
+    private String category;
+    private String usertype;
 }

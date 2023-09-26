@@ -19,6 +19,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-validation:2.7.14" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-webflux:2.7.14" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.7.14" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-security:2.7.14" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-oauth2-client:2.7.14" level="project" />
@@ -50,6 +51,9 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-web:5.3.29" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.7.14" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.3.29" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-aws-autoconfigure:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-aws-context:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.13.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.13.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.13.5" level="project" />
@@ -75,12 +79,11 @@
     <orderEntry type="library" name="Gradle: com.fasterxml:classmate:1.5.1" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jaxb:jaxb-runtime:2.3.8" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.3.29" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring-orm:5.3.29" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:2.7.14" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-orm:5.3.29" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-tx:5.3.29" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.3.29" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.3.29" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.7.14" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:2.7.14" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.7.14" level="project" />
@@ -94,6 +97,7 @@
     <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.78" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.78" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.3.29" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-aws-core:2.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-oauth2-core:5.7.10" level="project" />
     <orderEntry type="library" name="Gradle: com.nimbusds:oauth2-oidc-sdk:9.35" level="project" />
     <orderEntry type="library" name="Gradle: com.nimbusds:nimbus-jose-jwt:9.22" level="project" />
@@ -118,6 +122,10 @@
     <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns:4.1.94.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.94.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-java-sdk-s3:1.11.792" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-java-sdk-ec2:1.11.792" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-java-sdk-cloudformation:1.11.792" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-java-sdk-core:1.11.792" level="project" />
     <orderEntry type="library" name="Gradle: com.github.stephenc.jcip:jcip-annotations:1.0-1" level="project" />
     <orderEntry type="library" name="Gradle: com.nimbusds:content-type:2.2" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.4.11" level="project" />
@@ -138,8 +146,15 @@
     <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.94.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-transport-classes-epoll:4.1.94.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.94.Final" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-java-sdk-kms:1.11.792" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:jmespath-java:1.11.792" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.13.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.14" level="project" />
+    <orderEntry type="library" name="Gradle: software.amazon.ion:ion-java:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.8.1" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:accessors-smart:2.4.11" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-socks:4.1.94.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.16" level="project" />
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm:9.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-devtools:2.7.14" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.jsonwebtoken:jjwt-jackson:0.11.2" level="project" />

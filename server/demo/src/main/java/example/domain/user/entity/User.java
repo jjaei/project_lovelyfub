@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
@@ -68,4 +70,6 @@ public class User{
 	public String getRoleKey() {
 		return this.role.getKey();
 	}
+
+
 }

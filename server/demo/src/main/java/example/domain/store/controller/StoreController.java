@@ -48,6 +48,18 @@ public class StoreController {
         List<Store> store = pageStore.getContent();
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
     }
+    @GetMapping("/store")
+    public ResponseEntity getStoreList(String location,String detaillocation, @Positive @RequestParam int page, @Positive @RequestParam int size) {
+        Page<Store> pageStore = service.findStore(location, detaillocation,page -1, size);
+        List<Store> store = pageStore.getContent();
+        return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
+    }
+    //키워드포함하는 가게 찾기
+    @GetMapping("/store/search")
+    public ResponseEntity getStore(String keyword) {
+        List<Store> store = service.findStoreKeyword(keyword);
+        return new ResponseEntity<>(mapper.storeToStoreResponseDto(store), HttpStatus.OK);
+    }
     //상세페이지
     @GetMapping("/store/{id}")
     public ResponseEntity getCafe(@PathVariable("id") int storeid) {

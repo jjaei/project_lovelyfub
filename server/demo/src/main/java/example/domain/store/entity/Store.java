@@ -1,14 +1,14 @@
 package example.domain.store.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import example.domain.content.entity.Content;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -17,7 +17,7 @@ import javax.persistence.Table;
 public class Store {
     @Id
     private Integer storeid;
-    @Column(nullable = false)
+    @Column
     private String type;
     @Column(nullable = false)
     private String name;
@@ -44,4 +44,10 @@ public class Store {
     private Float latitude;
     @Column(nullable = false)
     private Float longitude;
+    @Column
+    private String category;
+    @Column
+    private String usertype;
+
+
 }

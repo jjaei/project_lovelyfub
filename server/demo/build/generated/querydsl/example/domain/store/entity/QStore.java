@@ -21,6 +21,8 @@ public class QStore extends EntityPathBase<Store> {
 
     public final StringPath address = createString("address");
 
+    public final StringPath category = createString("category");
+
     public final StringPath detaillocation = createString("detaillocation");
 
     public final StringPath instagram = createString("instagram");
@@ -44,6 +46,8 @@ public class QStore extends EntityPathBase<Store> {
     public final NumberPath<Integer> storeid = createNumber("storeid", Integer.class);
 
     public final StringPath type = createString("type");
+
+    public final StringPath usertype = createString("usertype");
 
     public QStore(String variable) {
         super(Store.class, forVariable(variable));
