@@ -2,6 +2,8 @@ package example.domain.content.service;
 
 import example.domain.content.entity.Content;
 import example.domain.content.repository.ContentRepository;
+import example.domain.user.entity.User;
+import example.domain.user.repository.UserRepository;
 import example.global.S3.service.S3Upload;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,6 +18,7 @@ import java.util.List;
 public class ContentService {
     private final ContentRepository contentRepository;
     private final S3Upload s3Upload;
+    private final UserRepository userRepository;
 
     public void createContent(Integer storeid, Long userid, List<MultipartFile>files, Integer rating, String contenttext) throws IOException {
         Content content=new Content();
@@ -29,6 +32,11 @@ public class ContentService {
         content.setImageUrls(imageUrls);
         content.setRating(rating);
         content.setContentText(contenttext);
+
+        User user = userRepository.findById(userid).orElse(null);
+        user.setLovelyCount(user.getLovelyCount() + 1);
+
         contentRepository.save(content);
+        userRepository.save(user);
     }
 }

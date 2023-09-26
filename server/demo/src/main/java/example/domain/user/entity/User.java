@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
@@ -59,6 +57,9 @@ public class User{
 
 	private String sns_link;
 
+	@Builder.Default
+	private Long lovelyCount = 0l;
+
 	public User update(String name, String email, String picture) {
 		this.name = name;
 		this.picture = picture;
@@ -70,6 +71,5 @@ public class User{
 	public String getRoleKey() {
 		return this.role.getKey();
 	}
-
 
 }
