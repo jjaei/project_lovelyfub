@@ -12,11 +12,16 @@ import net.minidev.json.JSONObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -89,5 +94,21 @@ public class UserController {
 
 		// 200 OK 상태 코드와 responseData를 JSON 형태로 반환
 		return ResponseEntity.ok(responseData);
+	}
+
+	@PutMapping("/userInfo")
+	public ResponseEntity<?> loginHandler(@RequestBody User user, Principal principal) {
+
+		String email = principal.getName();
+		Optional<User> optionalUser = userRepository.findByEmail(email);
+
+		if (optionalUser.isPresent()) {
+			User updateUser = optionalUser.get();
+			updateUser.setSns_link(user.getSns_link());
+			userRepository.save(updateUser);
+
+			return ResponseEntity.ok("User Info Updated Successfully");
+		}
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
 	}
 }
