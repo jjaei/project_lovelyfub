@@ -60,4 +60,17 @@ public class UserService {
         return contentRepository.findByUserId(loginUser.getId());
     }
 
+    // 유저 정보 수정
+    public User updateUserInfo(Principal principal, User updateUser) {
+        User loginUser = getLoggedInUser(principal);
+        loginUser.setSns_link(updateUser.getSns_link());
+        userRepository.save(loginUser);
+        return loginUser;
+    }
+
+    // 유저 프로필 조회하기
+    public List<Content> userProfile(Long userId) {
+        return contentRepository.findByUserId(userId);
+    }
+
 }
