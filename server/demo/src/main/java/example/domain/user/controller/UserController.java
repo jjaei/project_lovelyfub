@@ -1,61 +1,45 @@
 package example.domain.user.controller;
 
+import example.domain.content.entity.Content;
 import example.domain.user.entity.User;
 import example.domain.user.repository.UserRepository;
+import example.domain.user.service.UserService;
+import example.global.exception.NotFoundException;
 import lombok.RequiredArgsConstructor;
-import net.minidev.json.JSONObject;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
-import java.util.Optional;
+import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
 public class UserController {
 
 	private final UserRepository userRepository;
+	private final UserService userService;
 
 	@GetMapping("/user")
-	public JSONObject oauthLoginInfo(Principal principal) {
-		JSONObject obj = new JSONObject();
-		try {
-			String email = principal.getName();
-			Optional<User> optionalUser = userRepository.findByEmail(email);
-			if (optionalUser.isPresent()) {
-				User users = optionalUser.get();
-				obj.put("success", true);
-				obj.put("name", users.getName());
-				obj.put("email", users.getEmail());
-				obj.put("nickname", users.getNickname());
-				obj.put("picture", users.getPicture());
-				obj.put("sns_link", users.getSns_link());
-				obj.put("id", users.getId());
-			}
-			return obj;
-		} catch (NullPointerException e) {
-			obj.put("success", false);
-			return obj;
+	public User myProfile(Principal principal) {
+		User user = userService.oauthLoginInfo(principal);
+		if (user != null) {
+			return user;
+		} else {
+			throw new NotFoundException("로그인 유저를 찾을 수 없습니다.");
 		}
 	}
 
 	@PutMapping("/userInfo")
-	public ResponseEntity<?> loginHandler(@RequestBody User user, Principal principal) {
+	public User updateUserInfo(@RequestBody User updateUser, Principal principal) {
+		return userService.updateUserInfo(principal, updateUser);
+	}
 
-		String email = principal.getName();
-		Optional<User> optionalUser = userRepository.findByEmail(email);
-
-		if (optionalUser.isPresent()) {
-			User updateUser = optionalUser.get();
-			updateUser.setSns_link(user.getSns_link());
-			userRepository.save(updateUser);
-
-			return ResponseEntity.ok("User Info Updated Successfully");
-		}
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
+	@GetMapping("/userProfile/{userId}")
+	public List<Content> userProfile(@PathVariable Long userId) {
+		List<Content> userContents = userService.userProfile(userId);
+		return userContents;
 	}
 }
