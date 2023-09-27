@@ -1,6 +1,6 @@
 package example.domain.user.controller;
 
-import example.domain.content.entity.Content;
+import example.domain.user.dto.UserProfileResponse;
 import example.domain.user.entity.User;
 import example.domain.user.repository.UserRepository;
 import example.domain.user.service.UserService;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
-import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
@@ -38,8 +37,7 @@ public class UserController {
 	}
 
 	@GetMapping("/userProfile/{userId}")
-	public List<Content> userProfile(@PathVariable Long userId) {
-		List<Content> userContents = userService.userProfile(userId);
-		return userContents;
+	public UserProfileResponse userProfile(@PathVariable Long userId) {
+		return userService.getUserProfile(userId);
 	}
 }
