@@ -9,6 +9,8 @@ import example.domain.user.entity.User;
 import example.domain.user.repository.UserRepository;
 import example.global.exception.NotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -84,5 +86,13 @@ public class CommentService {
         }
         commentRepository.deleteById(commentId);
         return comment;
+    }
+
+    // 댓글 조회
+    public Page<Comment> getComments(Principal principal, Integer contentId, Pageable pageable) {
+        User loginUser = getLoggedInUser(principal);
+        Content content = contentRepository.findById(contentId)
+                .orElseThrow(() -> new NotFoundException("게시글이 존재하지 않습니다."));
+        return commentRepository.findByContent(content, pageable);
     }
 }
