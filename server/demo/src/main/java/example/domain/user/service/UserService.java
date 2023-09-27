@@ -11,6 +11,7 @@ import example.domain.user.repository.UserRepository;
 import example.global.exception.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.security.Principal;
 import java.util.List;
@@ -62,6 +63,7 @@ public class UserService {
     }
 
     // 유저 정보 수정
+    @Transactional
     public User updateUserInfo(Principal principal, User updateUser) {
         User loginUser = getLoggedInUser(principal);
         loginUser.setSns_link(updateUser.getSns_link());
