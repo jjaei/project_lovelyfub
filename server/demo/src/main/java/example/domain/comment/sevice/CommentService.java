@@ -63,9 +63,26 @@ public class CommentService {
         User commentUser = comment.getUser();
 
         if (!loginUser.getEmail().equals(commentUser.getEmail())) {
-            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "작성자만 게시글 수정이 가능합니다.");
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "작성자만 댓글 수정이 가능합니다.");
         }
         comment.updateComment(commentDto, loginUser);
         return commentRepository.save(comment);
+    }
+
+    // 댓글 삭제
+    @Transactional
+    public Comment deleteComment(Principal principal, Long commentId) {
+        User loginUser = getLoggedInUser(principal);
+
+        Comment comment = commentRepository.findById(commentId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "삭제할 댓글이 존재하지 않습니다."));
+
+        User commentUser = comment.getUser();
+
+        if (!loginUser.getEmail().equals(commentUser.getEmail())) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "작성자만 댓글 삭제가 가능합니다.");
+        }
+        commentRepository.deleteById(commentId);
+        return comment;
     }
 }
