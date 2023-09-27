@@ -5,6 +5,7 @@ import example.domain.content.repository.ContentRepository;
 import example.domain.likes.entity.Likes;
 import example.domain.likes.service.LikesService;
 import example.domain.store.entity.Store;
+import example.domain.user.dto.UserProfileResponse;
 import example.domain.user.entity.User;
 import example.domain.user.repository.UserRepository;
 import example.global.exception.NotFoundException;
@@ -69,8 +70,15 @@ public class UserService {
     }
 
     // 유저 프로필 조회하기
-    public List<Content> userProfile(Long userId) {
-        return contentRepository.findByUserId(userId);
+    public UserProfileResponse getUserProfile(Long userId) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new NotFoundException("유저가 존재하지 않습니다."));
+        List<Content> userContents = contentRepository.findByUserId(userId);
+        UserProfileResponse response = new UserProfileResponse();
+        response.setNickname(user.getNickname());
+        response.setSns_link(user.getSns_link());
+        response.setPicture(user.getPicture());
+        response.setContents(userContents);
+        return response;
     }
-
 }
