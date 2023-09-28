@@ -54,6 +54,12 @@ public class StoreController {
         List<Store> store = pageStore.getContent();
         return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
     }
+    @GetMapping("/store/filter")
+    public ResponseEntity getStoreFilter(String category, String usertype, String location,String detaillocation, @Positive @RequestParam int page, @Positive @RequestParam int size) {
+        Page<Store> pageStore = service.findStore(category, usertype, location, detaillocation,page -1, size);
+        List<Store> store = pageStore.getContent();
+        return new ResponseEntity<>(new MultiResponseDto<>(mapper.storeToStoreResponseDto(store), pageStore), HttpStatus.OK);
+    }
     //키워드포함하는 가게 찾기
     @GetMapping("/store/search")
     public ResponseEntity getStore(String keyword) {

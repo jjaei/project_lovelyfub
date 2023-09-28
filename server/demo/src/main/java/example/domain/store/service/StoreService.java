@@ -21,7 +21,6 @@ public class StoreService {
     public StoreService(StoreRepository storeRepository) {
         this.storeRepository = storeRepository;
     }
-
     @Transactional(readOnly = true)
     public Page<Store> findStore(String location, String detaillocation, String type, int page, int size){
         Pageable pageable = PageRequest.of(page, size);
@@ -36,6 +35,59 @@ public class StoreService {
         }
         else{
             return storeRepository.findAllByType(type, pageable);
+        }
+    }
+    @Transactional(readOnly = true)
+    public Page<Store> findStore(String category, String usertype, String location, String detaillocation, int page, int size){
+        Pageable pageable = PageRequest.of(page, size);
+
+        if(category!=null&&usertype==null&&location==null&&detaillocation==null){
+            //1개
+            //카테고리
+            //유저타입
+            //로케이션
+            return storeRepository.findAllByCategory(category, pageable);
+        }
+        else if(category==null&&usertype!=null&&location==null&&detaillocation==null){
+            return storeRepository.findAllByUsertype(usertype, pageable);
+        }
+        else if(category==null&&usertype==null&&location!=null&&detaillocation==null){
+            return storeRepository.findAllByLocation(location, pageable);
+        }
+        else if(category!=null&&usertype!=null&&location==null&&detaillocation==null){
+            //2개
+            //카테고리,유저타입
+            //카테고리,로케이션
+            //유저타입,로케이션
+            //로케이션,디테일로케이션
+            return storeRepository.findAllByCategoryAndUsertype(category, usertype, pageable);
+        }
+        else if(category!=null&&usertype==null&&location!=null&&detaillocation==null){
+            return storeRepository.findAllByCategoryAndLocation(category, location, pageable);
+        }
+        else if(category==null&&usertype!=null&&location!=null&&detaillocation==null){
+            return storeRepository.findAllByUsertypeAndLocation(usertype, location, pageable);
+        }
+        else if(category==null&&usertype==null&&location!=null&&detaillocation!=null){
+            return storeRepository.findAllByLocationAndDetaillocation(location, detaillocation, pageable);
+        }
+        else if(category!=null&&usertype!=null&&location!=null&&detaillocation==null){
+            //3개
+            //카테고리,유저타입,로케이션
+            //카테고리,로케이션,디테일로케이션
+            //유저타입,로케이션,디테일로케이션
+            return storeRepository.findAllByCategoryAndUsertypeAndLocation(category, usertype, location, pageable);
+        }
+        else if(category!=null&&usertype==null&&location!=null&&detaillocation!=null){
+            return storeRepository.findAllByCategoryAndLocationAndDetaillocation(category, location, detaillocation, pageable);
+        }
+        else if(category==null&&usertype!=null&&location!=null&&detaillocation!=null){
+            return storeRepository.findAllByUsertypeAndLocationAndDetaillocation(usertype, location, detaillocation, pageable);
+        }
+        else{
+            //4개
+            //카테고리,유저타입,로케이션,디테일로케이션
+            return storeRepository.findAllByCategoryAndUsertypeAndLocationAndDetaillocation(category, usertype, location, detaillocation, pageable);
         }
     }
 
