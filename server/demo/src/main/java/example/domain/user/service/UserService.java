@@ -66,7 +66,14 @@ public class UserService {
     @Transactional
     public User updateUserInfo(Principal principal, User updateUser) {
         User loginUser = getLoggedInUser(principal);
-        loginUser.setSns_link(updateUser.getSns_link());
+
+        if (updateUser.getSns_link() != null) {
+            loginUser.setSns_link(updateUser.getSns_link());
+        }
+
+        if (updateUser.getNickname() != null) {
+            loginUser.setNickname(updateUser.getNickname());
+        }
         userRepository.save(loginUser);
         return loginUser;
     }
