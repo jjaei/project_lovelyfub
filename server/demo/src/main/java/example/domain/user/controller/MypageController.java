@@ -30,7 +30,8 @@ public class MypageController {
         }
     }
 
-    @GetMapping("/stores")
+    // 좋아요 한 가게목록
+    @GetMapping("/likeStores")
     public List<Store> myStroes(Principal principal) {
         User user = userService.oauthLoginInfo(principal);
         if (user != null) {
@@ -45,6 +46,17 @@ public class MypageController {
         User user = userService.oauthLoginInfo(principal);
         if (user != null) {
             return userService.getMyContents(principal);
+        } else {
+            throw new NotFoundException("로그인 유저를 찾을 수 없습니다.");
+        }
+    }
+
+    // 좋아요 한 콘텐츠 목록
+    @GetMapping("/likeContents")
+    public List<Content> likeContent(Principal principal) {
+        User user = userService.oauthLoginInfo(principal);
+        if (user != null) {
+            return userService.getLikeContent(principal);
         } else {
             throw new NotFoundException("로그인 유저를 찾을 수 없습니다.");
         }

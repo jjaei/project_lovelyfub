@@ -3,6 +3,7 @@ package example.domain.user.service;
 import example.domain.content.entity.Content;
 import example.domain.content.repository.ContentRepository;
 import example.domain.likes.entity.Likes;
+import example.domain.likes.entity.LikesContent;
 import example.domain.likes.service.LikesService;
 import example.domain.store.entity.Store;
 import example.domain.user.dto.UserProfileResponse;
@@ -60,6 +61,20 @@ public class UserService {
         User loginUser = getLoggedInUser(principal);
 
         return contentRepository.findByUserId(loginUser.getId());
+    }
+
+    // 좋아요한 게시글 목록 가져오기
+    public List<Content> getLikeContent(Principal principal) {
+        User loginUser = getLoggedInUser(principal);
+
+        List<LikesContent> likeContent = likesService.getAllLikesContent();
+
+        List<Content> myLikeContents = likeContent.stream()
+                .filter(likesContent -> loginUser.equals(likesContent.getUser()))
+                .map(LikesContent::getContent)
+                .collect(Collectors.toList());
+
+        return myLikeContents;
     }
 
     // 유저 정보 수정
