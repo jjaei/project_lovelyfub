@@ -1,6 +1,6 @@
 package example.domain.likes.entity;
 
-import example.domain.store.entity.Store;
+import example.domain.content.entity.Content;
 import example.domain.user.entity.User;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Likes {
+public class LikesContent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,12 +21,12 @@ public class Likes {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "storeid")
-    private Store store;
+    @JoinColumn(name = "contentid")
+    private Content content;
 
     @Builder
-    public Likes(User user, Store store) {
+    public LikesContent(User user, Content content) {
         this.user = user;
-        this.store = store;
+        this.content = content;
     }
 }

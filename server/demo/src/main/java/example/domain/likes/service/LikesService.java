@@ -1,7 +1,13 @@
 package example.domain.likes.service;
 
+import example.domain.content.entity.Content;
+import example.domain.content.repository.ContentLikeRepository;
+import example.domain.content.repository.ContentRepository;
+import example.domain.likes.dto.LikesContentDto;
 import example.domain.likes.dto.LikesDto;
 import example.domain.likes.entity.Likes;
+import example.domain.likes.entity.LikesContent;
+import example.domain.likes.repository.LikesContentRepository;
 import example.domain.likes.repository.LikesRepository;
 import example.domain.store.entity.Store;
 import example.domain.store.repository.StoreLikeRepository;
@@ -23,6 +29,9 @@ public class LikesService {
     private final UserRepository userRepository;
     private final StoreRepository storeRepository;
     private final StoreLikeRepository storeLikeRepository;
+    private final ContentLikeRepository contentLikeRepository;
+    private final ContentRepository contentRepository;
+    private final LikesContentRepository likesContentRepository;
 
     @Transactional
     public void insertLike(LikesDto likesDto) throws Exception {
@@ -48,6 +57,29 @@ public class LikesService {
     }
 
     @Transactional
+    public void insertLikeContent(LikesContentDto likesContentDto) throws Exception {
+        User user = userRepository.findById(likesContentDto.getUserid())
+                .orElseThrow(() -> new NotFoundException("Could not found User Id : " + likesContentDto.getUserid()));
+
+        Content content = contentRepository.findById(likesContentDto.getContentid())
+                .orElseThrow(() -> new NotFoundException("Could not found Content Id : " + likesContentDto.getContentid()));
+
+        // 이미 좋아요가 눌린 상태라면 에러 반환
+        if (likesContentRepository.findByUserAndContent(user, content).isPresent()) {
+            throw new DuplicateResourceException("already exist data by user id : " + user.getId() + " ,"
+                    + "content id : " + content.getContentId());
+        }
+
+        LikesContent likesContent = LikesContent.builder()
+                .content(content)
+                .user(user)
+                .build();
+
+        likesContentRepository.save(likesContent);
+        contentLikeRepository.addLikeCount(content);
+    }
+
+    @Transactional
     public void deleteLike(LikesDto likesDto) {
         User user = userRepository.findById(likesDto.getUserid())
                 .orElseThrow(() -> new NotFoundException("Could not found User Id : " + likesDto.getUserid()));
@@ -62,8 +94,26 @@ public class LikesService {
         storeLikeRepository.deleteLikeCount(store);
     }
 
+    @Transactional
+    public void deleteLikeContent(LikesContentDto likesContentDto) {
+        User user = userRepository.findById(likesContentDto.getUserid())
+                .orElseThrow(() -> new NotFoundException("Could not found User Id : " + likesContentDto.getUserid()));
+
+        Content content = contentRepository.findById(likesContentDto.getContentid())
+                .orElseThrow(() -> new NotFoundException("Could not found Content Id : " + likesContentDto.getContentid()));
+
+        LikesContent likes = likesContentRepository.findByUserAndContent(user, content)
+                .orElseThrow(() -> new NotFoundException("Could not found like id"));
+
+        likesContentRepository.delete(likes);
+        contentLikeRepository.deleteLikeCount(content);
+    }
+
     public List<Likes> getAllLikes() {
         return likesRepository.findAll();
+    }
+    public List<LikesContent> getAllLikesContent() {
+        return likesContentRepository.findAll();
     }
 
 }

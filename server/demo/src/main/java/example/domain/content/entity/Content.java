@@ -1,7 +1,5 @@
 package example.domain.content.entity;
 
-import example.domain.store.entity.Store;
-import example.domain.user.entity.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -31,5 +29,9 @@ public class Content {
     private Integer rating;
 
     private String contentText;
+
+    @ColumnDefault("0")
+    @Column(name = "likecount", nullable = false)
+    private Integer likeCount;
 
 }
